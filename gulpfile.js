@@ -3,9 +3,9 @@ const browserSync = require("browser-sync").create();
 
 const clear = require("./task/clear.js");
 const pug = require("./task/pug.js");
-const css = require("./task/css.js");
+const scss = require("./task/scss.js");
 const path = require("./config/path.js");
-const { root } = require("./config/path.js");
+const js = require("./task/js.js");
 
 const server = () => {
   browserSync.init({
@@ -16,9 +16,11 @@ const server = () => {
 };
 const watcher = () => {
   watch(path.pug.watch, pug).on("all", browserSync.reload);
-  watch(path.css.watch, css).on("all", browserSync.reload);
+  watch(path.scss.watch, scss).on("all", browserSync.reload);
+  watch(path.js.watch, js).on("all", browserSync.reload);
 };
 
 exports.pug = pug;
-exports.css = css;
-exports.dev = series(clear, parallel(pug, css), parallel(watcher, server));
+exports.scss = scss;
+exports.js = js;
+exports.dev = series(clear, parallel(pug, scss, js), parallel(watcher, server));

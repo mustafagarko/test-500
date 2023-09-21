@@ -1,2 +1,1 @@
-"use strict";var sum=function(s,u){return s+u};console.log(sum(2,10));
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uanMiXSwibmFtZXMiOlsic3VtIiwiYSIsImIiLCJjb25zb2xlIiwibG9nIl0sIm1hcHBpbmdzIjoiYUFBQSxJQUFNQSxJQUFNLFNBQUNDLEVBQUdDLEdBQUMsT0FBS0QsRUFBSUMsR0FDMUJDLFFBQVFDLElBQUlKLElBQUksRUFBRyIsImZpbGUiOiJtYWluLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3Qgc3VtID0gKGEsIGIpID0+IGEgKyBiO1xuY29uc29sZS5sb2coc3VtKDIsIDEwKSk7XG4iXX0=
+!function(){var o={54:function(o){o.exports=(o,n)=>o+n}},n={};function r(t){var e=n[t];if(void 0!==e)return e.exports;var s=n[t]={exports:{}};return o[t](s,s.exports,r),s.exports}!function(){const o=r(54);console.log(o(2,10)),console.log(o(7,12))}()}();

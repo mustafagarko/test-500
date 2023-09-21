@@ -1,7 +1,7 @@
 const pathSrc = "./src";
 const pathDest = "./public";
 
-module.exports = {
+export default {
   root: pathDest,
   html: {
     src: pathSrc + "/html/*.html",
@@ -32,5 +32,10 @@ module.exports = {
     src: pathSrc + "/img/*.{png,jpg,jpeg,gif}",
     watch: pathSrc + "/img/**/*.{png,jpg,jpeg,gif}",
     dest: pathDest + "/img",
+  },
+  font: {
+    src: pathSrc + "/font/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}",
+    watch: pathSrc + "/font/**/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}",
+    dest: pathDest + "/font",
   },
 };

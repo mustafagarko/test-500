@@ -4,9 +4,7 @@ block page
   include chunk/header
 
   h1.title Glavnaya!
-  picture 
-    source(srcset="img/slide1Bg.webp", type="image/webp")
-    img(src="img/slide1Bg.jpg", alt="New York", width="500")
+  img(src="img/slide1Bg.jpg", alt="New York", width="500")
   ul.news
     each item in news
         li= item.name

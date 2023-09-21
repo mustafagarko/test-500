@@ -8,14 +8,16 @@
   </head>
   <body>
     @@include("chunk/header.html")
-    <h1>Главная !!!</h1>
+
+    <h1>Главная !!</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quidem ex
       pariatur incidunt, accusamus suscipit obcaecati et mollitia non quia
       facere voluptate sequi quasi quae sit nostrum. Deleniti, tenetur
       assumenda?
     </p>
-    @@loop("chunk/news-item.html", "../../data/news.json")
+
+    @@loop("chunk/news-item.html", "../../gulpfile.babel.js/data/news.json")
     @@include("chunk/footer.html")
   </body>
 </html>

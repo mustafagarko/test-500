@@ -7,25 +7,36 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("const sum = __webpack_require__(/*! ./module/sum.js */ \"./src/js/module/sum.js\");\n\nconsole.log(sum(2, 10));\nconsole.log(sum(7, 12));\n\n\n//# sourceURL=webpack://test_500na700/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _module_swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./module/swiper */ \"./src/js/module/swiper.js\");\n/* harmony import */ var _module_accordion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./module/accordion */ \"./src/js/module/accordion.js\");\n\n\n\n\n\n(0,_module_accordion__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n\n//# sourceURL=webpack://test_500na700/./src/js/main.js?");
 
 /***/ }),
 
-/***/ "./src/js/module/sum.js":
-/*!******************************!*\
-  !*** ./src/js/module/sum.js ***!
-  \******************************/
-/***/ (function(module) {
+/***/ "./src/js/module/accordion.js":
+/*!************************************!*\
+  !*** ./src/js/module/accordion.js ***!
+  \************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("module.exports = (a, b) => a + b;\n\n\n//# sourceURL=webpack://test_500na700/./src/js/module/sum.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ accordion; }\n/* harmony export */ });\nfunction accordion() {\n  const titles = document.querySelectorAll(\".accordion-title\");\n  const contents = document.querySelectorAll(\".accordion-content\");\n\n  titles.forEach((item, i) => {\n    item.addEventListener(\"click\", () => {\n      const activeContent = document.querySelector(\"#\" + item.dataset.tab);\n      if (activeContent.classList.contains(\"active\")) {\n        activeContent.classList.remove(\"active\");\n        item.classList.remove(\"active\");\n        activeContent.style.maxHeight = 0;\n      } else {\n        contents.forEach((el) => {\n          el.classList.remove(\"active\");\n          el.style.maxHeight = 0;\n        });\n        titles.forEach((el) => el.classList.remove(\"active\"));\n        item.classList.add(\"active\");\n        activeContent.classList.add(\"active\");\n        activeContent.style.maxHeight = activeContent.scrollHeight + \"px\";\n      }\n    });\n  });\n}\n\n\n//# sourceURL=webpack://test_500na700/./src/js/module/accordion.js?");
+
+/***/ }),
+
+/***/ "./src/js/module/swiper.js":
+/*!*********************************!*\
+  !*** ./src/js/module/swiper.js ***!
+  \*********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (new Swiper(\".swiper\", {\n  loop: true,\n  keyboard: {\n    enable: true,\n  },\n  autoplay: {\n    delay: 3000,\n    disableOnInteraction: true,\n  },\n  slidesPerView: 1.15,\n  centeredSlides: true,\n  spaceBetween: 10,\n  navigation: {\n    nextEl: \".swiper-button-nextCustom\",\n    prevEl: \".swiper-button-prevCustom\",\n  },\n}));\n\n\n//# sourceURL=webpack://test_500na700/./src/js/module/swiper.js?");
 
 /***/ })
 
@@ -54,6 +65,35 @@ eval("module.exports = (a, b) => a + b;\n\n\n//# sourceURL=webpack://test_500na7
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
 /******/ 	
 /************************************************************************/
 /******/ 	

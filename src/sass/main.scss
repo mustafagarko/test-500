@@ -1,5 +1,12 @@
 $base-font-size: 14px;
 
+// @font-face {
+//   font-family: "Mplus";
+//   src: url("../font/MPLUS1p-Medium.ttf") format("ttf");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
 @mixin ph {
   @media (max-width: 700px) {
     @content;
@@ -22,107 +29,16 @@ $base-font-size: 14px;
 }
 
 body {
-  font-size: $base-font-size;
-  font-family: Arial;
+  font-family: "M PLUS 1", sans-serif;
+  font-size: 22px;
   line-height: 1.5;
-  background: #ffa;
+  background: #000;
+  padding-top: 20vh;
 
   @include ph {
     color: #fff;
     background-color: #000;
   }
-}
-
-header {
-  color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 7.3vh 45vw 7.3vh 7vw;
-  height: 20vh;
-
-  @include thouspx {
-    padding: 7.3vh 10vw 7.3vh 7vw;
-  }
-}
-
-.logo {
-  width: 42px;
-  height: 50px;
-}
-
-.logo img {
-  object-fit: fill;
-  width: 100%;
-  height: 100%;
-}
-header nav ul {
-  position: relative;
-}
-
-header nav ul li {
-  float: left;
-}
-
-header nav ul li a {
-  padding: 15px;
-  color: #fff;
-  background-color: #000;
-  font-size: 16px;
-  display: block;
-}
-
-header nav ul li a:hover {
-  color: #74ff73;
-}
-
-nav ul li ul {
-  position: absolute;
-  display: none;
-  width: 80%;
-  left: 0;
-  z-index: 30;
-  padding-top: 5.2vh;
-  padding-bottom: 5.2vh;
-  background-color: #000;
-}
-
-nav ul li div {
-  position: absolute;
-  width: 200vw;
-  height: 27vh;
-  left: 0;
-  display: none;
-  transform: translateX(-50%);
-  background-color: #000;
-  z-index: 10;
-}
-
-nav ul li:hover > ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-nav ul li:hover > div {
-  display: initial;
-}
-
-nav ul li ul li {
-  width: 50%;
-}
-.toend {
-  display: flex;
-  justify-content: end;
-}
-
-nav ul li ul li a {
-  padding-left: 10px;
-  padding-top: 3px;
 }
 
 @import "block/*.scss";

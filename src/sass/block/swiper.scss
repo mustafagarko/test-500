@@ -1,0 +1,76 @@
+.swiper {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+}
+
+.swiper-wrapper {
+  width: 100vw;
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 61vh;
+}
+
+.swiper-slide img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.swiper-button-prevCustom {
+  position: absolute;
+  bottom: 30px;
+  left: 49%;
+  background-image: url("../../img/swiperArrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 40px;
+  background-size: contain;
+  z-index: 50;
+  transform: scaleX(-1) translateX(100%);
+}
+.swiper-button-prevCustom:hover {
+  position: absolute;
+  bottom: 30px;
+  left: 49%;
+  background-image: url("../../img/swiperArrowHover.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 40px;
+  background-size: contain;
+  z-index: 50;
+  transform: scaleX(-1) translateX(100%);
+}
+
+.swiper-button-nextCustom {
+  position: absolute;
+  bottom: 30px;
+  right: 49%;
+  background-image: url("../../img/swiperArrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 40px;
+  background-size: contain;
+  z-index: 50;
+
+  transform: translateX(100%);
+}
+.swiper-button-nextCustom:hover {
+  position: absolute;
+  bottom: 30px;
+  right: 49%;
+  background-image: url("../../img/swiperArrowHover.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 40px;
+  background-size: contain;
+  z-index: 50;
+
+  transform: translateX(100%);
+}

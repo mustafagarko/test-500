@@ -1,4 +1,6 @@
-const sum = require("./module/sum.js");
+"use strict";
+import swiper from "./module/swiper";
 
-console.log(sum(2, 10));
-console.log(sum(7, 12));
+import accordion from "./module/accordion";
+
+accordion();

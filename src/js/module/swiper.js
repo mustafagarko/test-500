@@ -7,10 +7,19 @@ export default new Swiper(".swiper", {
     delay: 3000,
     disableOnInteraction: true,
   },
-  slidesPerView: 1.1,
-  // slidesPerGroup: 1.1,
-  centeredSlides: true,
-  spaceBetween: 10,
+  slidesPerView: 1,
+  breakpoints: {
+    // when window width is <= 499px
+
+    // when window width is <= 999px
+    1000: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  },
+  // centeredSlides: true,
+  spaceBetween: 40,
+
   navigation: {
     nextEl: ".swiper-button-nextCustom",
     prevEl: ".swiper-button-prevCustom",

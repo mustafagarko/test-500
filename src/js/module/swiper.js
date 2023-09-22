@@ -5,9 +5,10 @@ export default new Swiper(".swiper", {
   },
   autoplay: {
     delay: 3000,
-    disableOnInteraction: true,
+    disableOnInteraction: false,
   },
   slidesPerView: 1,
+
   spaceBetween: 40,
 
   navigation: {

@@ -62,6 +62,7 @@
   display: flex;
   //   justify-content: end;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .ph-acc-content {
@@ -88,5 +89,15 @@
 }
 
 .ph-acc-title h3 {
-  padding-left: 20%;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 27%;
+}
+
+.ph-content-sub p {
+  padding-left: 0vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
 }

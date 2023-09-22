@@ -28,6 +28,9 @@
   top: 60%;
   left: 10%;
   z-index: 40;
+  @include ph {
+    font-size: 2rem;
+  }
 }
 .swiper-slide img {
   object-fit: cover;

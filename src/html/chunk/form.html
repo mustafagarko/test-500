@@ -8,19 +8,13 @@
     </div>
     <div class="form-div">
       <input
+        placeholder="Type Date"
         type="text"
-        placeholder="11.02.2022"
-        onfocus="this.type='date'"
-        onblur="this.type='text'"
         class="form-input"
+        onfocus="(this.type = 'date')"
+        id="date"
       />
-      <input
-        type="text"
-        placeholder="15:00"
-        onfocus="this.type='time'"
-        onblur="this.type='text'"
-        class="form-input"
-      />
+      <input type="time" placeholder="15:00" class="form-input" />
     </div>
   </form>
   <button class="form-button"><span>Подписаться</span></button>

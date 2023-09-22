@@ -86,7 +86,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
   \*********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (new Swiper(\".swiper\", {\n  loop: true,\n  keyboard: {\n    enable: true,\n  },\n  autoplay: {\n    delay: 3000,\n    disableOnInteraction: false,\n  },\n  slidesPerView: 1,\n\n  spaceBetween: 40,\n\n  navigation: {\n    nextEl: \".swiper-button-nextCustom\",\n    prevEl: \".swiper-button-prevCustom\",\n  },\n}));\n\n\n//# sourceURL=webpack://test_500na700/./src/js/module/swiper.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (new Swiper(\".swiper-1\", {\n  loop: true,\n  keyboard: {\n    enable: true,\n  },\n  autoplay: {\n    delay: 3000,\n    disableOnInteraction: false,\n  },\n  slidesPerView: 1,\n\n  spaceBetween: 40,\n\n  navigation: {\n    nextEl: \".swiper-button-nextCustom\",\n    prevEl: \".swiper-button-prevCustom\",\n  },\n}));\n\n\n//# sourceURL=webpack://test_500na700/./src/js/module/swiper.js?");
 
 /***/ }),
 

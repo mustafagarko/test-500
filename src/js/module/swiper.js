@@ -1,4 +1,4 @@
-export default new Swiper(".swiper", {
+export default new Swiper(".swiper-1", {
   loop: true,
   keyboard: {
     enable: true,

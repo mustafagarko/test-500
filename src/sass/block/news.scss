@@ -1,10 +1,28 @@
-.news {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
+.news-section {
+  color: white;
+}
 
-  @include ph {
-    display: block;
-  }
+.news-container {
+  padding: 15px 9%;
+}
+
+.news-container h1 {
+  font-size: 68px;
+}
+
+.news-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.news-box img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.news-card {
+  // padding: 60px 20px 0px;
+  // margin-bottom: 30px;
+  height: fit-content;
 }

@@ -31,6 +31,8 @@
 }
 
 .footer .footer-content .footer-text p {
+  font-size: 14px;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -50,4 +52,13 @@
     align-items: center;
     justify-content: center;
   }
+}
+.footer-text h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: white;
 }

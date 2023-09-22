@@ -5,7 +5,7 @@
   height: fit-content;
   padding-left: 7vw;
   padding-right: 7vw;
-  padding-top: 5vh;
+  padding-top: 2vh;
   padding-bottom: 5vh;
 
   display: flex;
@@ -13,12 +13,18 @@
   gap: 20px;
 
   h1 {
-    font-size: 4rem;
+    font-size: 68px;
+    font-weight: 500;
+
+    @include ph {
+      font-size: 4rem;
+    }
   }
 
   p {
     width: 27vw;
     font-size: 16px;
+    font-weight: 400;
 
     @include ph {
       width: 100%;

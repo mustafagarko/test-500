@@ -5,16 +5,12 @@
   height: fit-content;
   padding-left: 7vw;
   padding-right: 7vw;
-  padding-top: 7vh;
-  padding-bottom: 7vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  @include ph {
-    height: 100vh;
-  }
 
   h1 {
     font-size: 4rem;

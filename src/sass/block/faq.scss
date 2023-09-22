@@ -1,33 +1,49 @@
 .faq-section {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 .faq-container {
   color: white;
   padding-left: 7vw;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  @include ph {
+    flex-direction: column;
+    justify-content: initial;
+    gap: 20px;
+  }
 }
 
 .faq-container h1 {
   font-size: 68px;
   width: 10vw;
+
+  @include ph {
+    font-size: 40px;
+  }
 }
 
 .accordion {
   display: flex;
   flex-direction: column;
-  width: 68vw;
+  width: 100%;
   cursor: pointer;
   border-bottom: 1px solid;
   border-color: #636264;
+  padding-bottom: 5px;
 }
 .accordion-title {
   padding: 20px;
 }
+.accordion-title h3 {
+  font-size: 20px;
+  font-weight: 100;
+}
 
 .accordion-content {
+  width: 100%;
   visibility: hidden;
   padding: 6px;
   max-height: 0;
@@ -36,7 +52,15 @@
     opacity 0.1s ease-out, visibility 0.1s ease-out 0.3s;
 }
 
+.accordion-content p {
+  font-size: 16px;
+  font-weight: 200;
+  padding-left: 14px;
+  padding-bottom: 5px;
+}
+
 .accordion-content.active {
+  width: 100%;
   visibility: visible;
   opacity: 1;
   transition: max-height 0.5s ease-out, padding 0.5s ease-out,
@@ -45,7 +69,10 @@
 
 .accordion-container {
   margin-right: 4vw;
-
+  width: 63vw;
   border-top: 2px solid;
   border-color: white;
+  @include ph {
+    width: 86vw;
+  }
 }

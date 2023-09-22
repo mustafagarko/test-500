@@ -1,3 +1,8 @@
+.faq-section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
 .faq-container {
   color: white;
   padding-left: 7vw;
@@ -7,8 +12,6 @@
 
 .faq-container h1 {
   font-size: 68px;
-  //   color: white;
-  //   font-size: xx-large;
   width: 10vw;
 }
 
@@ -17,6 +20,8 @@
   flex-direction: column;
   width: 68vw;
   cursor: pointer;
+  border-bottom: 1px solid;
+  border-color: #636264;
 }
 .accordion-title {
   padding: 20px;
@@ -24,7 +29,7 @@
 
 .accordion-content {
   visibility: hidden;
-  padding: 5px;
+  padding: 6px;
   max-height: 0;
   opacity: 0;
   transition: max-height 0.5s ease-out, padding 0.5s ease-out,
@@ -36,4 +41,11 @@
   opacity: 1;
   transition: max-height 0.5s ease-out, padding 0.5s ease-out,
     opacity 0.1s ease-out, visibility 0.1s ease-out 0.3s;
+}
+
+.accordion-container {
+  margin-right: 4vw;
+
+  border-top: 2px solid;
+  border-color: white;
 }

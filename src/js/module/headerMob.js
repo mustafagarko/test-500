@@ -26,7 +26,11 @@ export default function headerMob() {
   console.log(navBlock);
   const [phMenu] = document.getElementsByClassName("ph-menu");
   phMenu.addEventListener("click", () => {
-    console.log(`CLICKED`);
     navBlock.classList.toggle("mob-container-active");
+    if (navBlock.classList.contains("mob-container-active")) {
+      phMenu.style.backgroundImage = 'url("../../img/closeMenuPhone.svg")';
+    } else {
+      phMenu.style.backgroundImage = 'url("../../img/menuPhone.svg")';
+    }
   });
 }

@@ -23,7 +23,6 @@ export default function headerMob() {
   });
 
   const [navBlock] = document.getElementsByClassName("mob-container");
-  console.log(navBlock);
   const [phMenu] = document.getElementsByClassName("ph-menu");
   phMenu.addEventListener("click", () => {
     navBlock.classList.toggle("mob-container-active");

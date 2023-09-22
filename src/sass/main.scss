@@ -28,6 +28,7 @@ body {
   background: #000;
   padding-top: 20vh;
   overflow-x: hidden;
+  overflow-y: hidden;
 
   @include ph {
     color: #fff;

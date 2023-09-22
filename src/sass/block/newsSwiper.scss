@@ -2,10 +2,19 @@
   height: fit-content;
   display: none;
   @media screen and (max-width: 700px) {
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     margin-top: 5vh;
     margin-bottom: 5vh;
   }
+}
+
+.swiper-news h1 {
+  padding-left: 7vw;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 4rem;
 }
 
 .swiper-news .swiper-wrapper-news {

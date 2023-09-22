@@ -1,0 +1,63 @@
+.mob-container {
+  background-color: black;
+  display: none;
+}
+
+.mob-container-active {
+  @include ph {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    top: 20vh;
+    width: 80%;
+    height: 80vh;
+    padding-right: 7vw;
+  }
+}
+
+.ph-acc-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ph-menu {
+  cursor: pointer;
+}
+
+.ph-acc {
+  display: flex;
+  flex-direction: column;
+}
+
+.ph-acc-title {
+  display: flex;
+  justify-content: end;
+}
+
+.ph-acc-content {
+  display: flex;
+  justify-content: end;
+}
+
+.ph-acc-content {
+  visibility: hidden;
+  padding: 6px;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out,
+    opacity 0.1s ease-out, visibility 0.1s ease-out 0.3s;
+}
+
+.ph-acc-content.active {
+  visibility: visible;
+  opacity: 1;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out,
+    opacity 0.1s ease-out, visibility 0.1s ease-out 0.3s;
+}
+.ph-content-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

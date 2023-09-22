@@ -3,5 +3,5 @@ export default new Swiper(".swiper-news", {
   loop: true,
   slidesPerView: 1.5,
   centeredSlides: false,
-  spaceBetween: 40,
+  spaceBetween: 20,
 });

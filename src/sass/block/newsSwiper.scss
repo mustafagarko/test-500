@@ -16,6 +16,9 @@
   padding-bottom: 20px;
   color: white;
   font-size: 4rem;
+  @include ph {
+    padding-left: 0;
+  }
 }
 
 .swiper-news .swiper-wrapper-news {

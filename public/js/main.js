@@ -16,7 +16,7 @@
   \************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _module_swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./module/swiper */ \"./src/js/module/swiper.js\");\n/* harmony import */ var _module_accordion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./module/accordion */ \"./src/js/module/accordion.js\");\n\n\n\n\n\n(0,_module_accordion__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n\n//# sourceURL=webpack://test_500na700/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _module_swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./module/swiper */ \"./src/js/module/swiper.js\");\n/* harmony import */ var _module_accordion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./module/accordion */ \"./src/js/module/accordion.js\");\n/* harmony import */ var _module_newsSwiper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./module/newsSwiper */ \"./src/js/module/newsSwiper.js\");\n\n\n\n\n\n(0,_module_accordion__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n(0,_module_newsSwiper__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\n\n//# sourceURL=webpack://test_500na700/./src/js/main.js?");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ accordion; }\n/* harmony export */ });\nfunction accordion() {\n  const titles = document.querySelectorAll(\".accordion-title\");\n  const contents = document.querySelectorAll(\".accordion-content\");\n\n  titles.forEach((item, i) => {\n    item.addEventListener(\"click\", () => {\n      const activeContent = document.querySelector(\"#\" + item.dataset.tab);\n      if (activeContent.classList.contains(\"active\")) {\n        activeContent.classList.remove(\"active\");\n        item.classList.remove(\"active\");\n        activeContent.style.maxHeight = 0;\n      } else {\n        contents.forEach((el) => {\n          el.classList.remove(\"active\");\n          el.style.maxHeight = 0;\n        });\n        titles.forEach((el) => el.classList.remove(\"active\"));\n        item.classList.add(\"active\");\n        activeContent.classList.add(\"active\");\n        activeContent.style.maxHeight = activeContent.scrollHeight + \"px\";\n      }\n    });\n  });\n}\n\n\n//# sourceURL=webpack://test_500na700/./src/js/module/accordion.js?");
+
+/***/ }),
+
+/***/ "./src/js/module/newsSwiper.js":
+/*!*************************************!*\
+  !*** ./src/js/module/newsSwiper.js ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (new Swiper(\".swiper-news\", {\n  loop: true,\n\n  slidesPerView: 1.5,\n\n  spaceBetween: 10,\n}));\n\n\n//# sourceURL=webpack://test_500na700/./src/js/module/newsSwiper.js?");
 
 /***/ }),
 

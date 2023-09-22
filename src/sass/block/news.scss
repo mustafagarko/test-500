@@ -1,9 +1,11 @@
 .news-section {
   color: white;
-}
+  padding-left: 7vw;
+  padding-right: 7vw;
 
-.news-container {
-  padding: 15px 9%;
+  @include ph {
+    display: none;
+  }
 }
 
 .news-container h1 {
@@ -12,7 +14,7 @@
 
 .news-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 30px;
 }
 

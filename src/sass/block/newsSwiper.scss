@@ -1,0 +1,23 @@
+.swiper-news {
+  height: 100vh;
+  display: none;
+  @media screen and (max-width: 700px) {
+    display: flex;
+  }
+}
+
+.swiper-news .swiper-wrapper-news {
+  width: 100vw;
+  height: 100%;
+}
+
+.swiper-news .swiper-wrapper-news .swiper-slide-news {
+  height: 61vh;
+}
+
+.swiper-news .swiper-wrapper-news .swiper-slide-news img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}

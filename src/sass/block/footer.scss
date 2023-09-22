@@ -1,0 +1,26 @@
+.footer {
+  width: 100vw;
+  height: fit-content;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  background-color: #312f35;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 20vw;
+
+  @include ph {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.footer .footer-content p {
+  text-decoration: underline;
+}
+
+.footer .footer-content .footer-text p {
+  text-decoration: none;
+}

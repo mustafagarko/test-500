@@ -23,7 +23,20 @@
 }
 
 .ph-menu {
-  cursor: pointer;
+  display: none;
+  @include ph {
+    cursor: pointer;
+    display: block;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+}
+
+.ph-menu img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .ph-acc {

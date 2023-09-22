@@ -17,17 +17,6 @@ header {
   }
 }
 
-.ph-menu {
-  display: none;
-  @include ph {
-    display: block;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    padding-right: 7vw;
-  }
-}
-
 .logo {
   width: 42px;
   height: 50px;

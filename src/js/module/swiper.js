@@ -7,7 +7,8 @@ export default new Swiper(".swiper", {
     delay: 3000,
     disableOnInteraction: true,
   },
-  slidesPerView: 1.15,
+  slidesPerView: 1.1,
+  // slidesPerGroup: 1.1,
   centeredSlides: true,
   spaceBetween: 10,
   navigation: {

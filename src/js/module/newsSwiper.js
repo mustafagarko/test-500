@@ -1,7 +1,6 @@
 export default new Swiper(".swiper-news", {
-  // loop: true,
-  autoplay: false,
-  loop: false,
+  autoplay: true,
+  loop: true,
   slidesPerView: 1.5,
   centeredSlides: false,
   spaceBetween: 40,

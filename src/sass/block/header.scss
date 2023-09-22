@@ -39,6 +39,7 @@ header nav ul li {
 }
 
 header nav ul li a {
+  z-index: 40;
   padding: 15px;
   color: #fff;
   background-color: #000;
@@ -48,6 +49,10 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: #74ff73;
+}
+
+header nav ul li a:hover > div {
+  display: block;
 }
 
 nav ul li ul {
@@ -98,4 +103,20 @@ nav ul li ul li a {
   color: white;
   text-decoration: underline;
   text-underline-offset: 8px;
+}
+
+.filter {
+  display: none;
+  width: 200vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.4;
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  z-index: 20;
+}
+
+.filter:hover {
+  display: none;
 }

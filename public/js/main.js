@@ -76,7 +76,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (new Swiper(\".swiper-news\", {\n  autoplay: true,\n  loop: true,\n  slidesPerView: 1.5,\n  centeredSlides: false,\n  spaceBetween: 20,\n}));\n\n\n//# sourceURL=webpack://test_500na700/./src/js/module/newsSwiper.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (new Swiper(\".swiper-news\", {\n  autoplay: {\n    delay: 3000,\n    disableOnInteraction: false,\n  },\n  loop: true,\n  slidesPerView: 1.4,\n  centeredSlides: false,\n  spaceBetween: 40,\n}));\n\n\n//# sourceURL=webpack://test_500na700/./src/js/module/newsSwiper.js?");
 
 /***/ }),
 

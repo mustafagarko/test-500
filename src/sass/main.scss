@@ -19,6 +19,7 @@ $base-font-size: 16px;
   list-style: none;
   text-decoration: none;
   font-size: 14px;
+  overflow-x: hidden;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
   line-height: 1.5;
   background: #000;
   padding-top: 20vh;
+  overflow-x: hidden;
 
   @include ph {
     color: #fff;

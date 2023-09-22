@@ -1,4 +1,3 @@
-// "use strict";
 import swiper from "./module/swiper";
 import { btnForm, inputs } from "./module/form";
 import { mask } from "./module/mask";

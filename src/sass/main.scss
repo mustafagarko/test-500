@@ -1,11 +1,4 @@
-$base-font-size: 14px;
-
-// @font-face {
-//   font-family: "Mplus";
-//   src: url("../font/MPLUS1p-Medium.ttf") format("ttf");
-//   font-weight: normal;
-//   font-style: normal;
-// }
+$base-font-size: 16px;
 
 @mixin ph {
   @media (max-width: 700px) {

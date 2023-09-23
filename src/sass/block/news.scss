@@ -1,7 +1,7 @@
 .news-section {
   color: white;
-  padding-left: 7vw;
-  padding-right: 7vw;
+  padding-left: $padding-left;
+  padding-right: $padding-right;
   padding-top: 5vh;
   padding-bottom: 5vh;
 
@@ -12,7 +12,7 @@
 
 .news-container h1 {
   padding-bottom: 14px;
-  font-size: 68px;
+  font-size: $title-font-size;
 }
 
 .news-box {
@@ -27,12 +27,15 @@
   height: 100%;
 }
 .news-card {
-  // padding: 60px 20px 0px;
-  // margin-bottom: 30px;
   height: fit-content;
 }
 
 .news-card h3 {
+  font-size: $main-font-size;
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.news-card p {
+  font-size: $smaller-font-size;
 }

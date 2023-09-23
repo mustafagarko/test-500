@@ -1,4 +1,11 @@
 $base-font-size: 16px;
+$padding-left: 7vw;
+$padding-right: 7vw;
+$background-color: #000;
+$title-font-size: 80px;
+$title-font-size-mobile: 40px;
+$main-font-size: 16px;
+$smaller-font-size: 14px;
 
 @mixin ph {
   @media (max-width: 700px) {
@@ -18,20 +25,19 @@ $base-font-size: 16px;
   margin: 0;
   list-style: none;
   text-decoration: none;
-  font-size: 14px;
 }
 
 body {
   font-family: "M PLUS 1", sans-serif;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 1.5;
-  background: #000;
+  background: $background-color;
   padding-top: 20vh;
   overflow-x: hidden;
 
   @include ph {
     color: #fff;
-    background-color: #000;
+    background-color: $background-color;
   }
 }
 

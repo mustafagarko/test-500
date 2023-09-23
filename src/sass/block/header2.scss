@@ -14,7 +14,7 @@
     top: 20vh;
     width: 80%;
     height: 100vh;
-    padding-right: 7vw;
+    padding-right: $padding-right;
   }
 }
 
@@ -55,12 +55,10 @@
   cursor: pointer;
 
   display: flex;
-  //   justify-content: end;
 }
 
 .ph-acc-content {
   display: flex;
-  //   justify-content: end;
   cursor: pointer;
   margin-bottom: 10px;
 }
@@ -89,7 +87,7 @@
 }
 
 .ph-acc-title h3 {
-  font-size: 16px;
+  font-size: $main-font-size;
   font-weight: 500;
   padding-left: 27%;
 }

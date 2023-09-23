@@ -3,8 +3,8 @@
   height: fit-content;
   padding-top: 7vh;
   padding-bottom: 7vh;
-  padding-left: 7vw;
-  padding-right: 7vw;
+  padding-left: $padding-left;
+  padding-right: $padding-right;
   background-color: #312f35;
   color: white;
   display: flex;
@@ -16,7 +16,6 @@
     padding-bottom: 15vh;
     flex-direction: column;
     gap: 30px;
-    // align-items: center;
     justify-content: center;
   }
 }
@@ -31,7 +30,7 @@
 }
 
 .footer .footer-content .footer-text p {
-  font-size: 14px;
+  font-size: $smaller-font-size;
   font-weight: 400;
   text-decoration: none;
 }
@@ -54,13 +53,16 @@
   }
 }
 .footer-text h3 {
-  font-size: 16px;
+  font-size: $main-font-size;
   font-weight: 500;
 }
 
 .footer-content a {
   text-decoration: none;
   color: white;
+}
+.footer-content a p {
+  font-size: $smaller-font-size;
 }
 
 .footer-icon {

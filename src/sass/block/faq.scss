@@ -5,7 +5,8 @@
 
 .faq-container {
   color: white;
-  padding-left: 7vw;
+  padding-left: $padding-left;
+  padding-right: $padding-right;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -17,11 +18,12 @@
 }
 
 .faq-container h1 {
-  font-size: 68px;
+  font-size: $title-font-size;
   width: 10vw;
+  height: fit-content;
 
   @include ph {
-    font-size: 40px;
+    font-size: $title-font-size-mobile;
   }
 }
 
@@ -68,7 +70,6 @@
 }
 
 .accordion-container {
-  margin-right: 4vw;
   width: 63vw;
   border-top: 2px solid;
   border-color: white;

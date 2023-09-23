@@ -2,8 +2,8 @@
   position: relative;
   width: 100vw;
   height: 80vh;
-  padding-left: 7vw;
-  padding-right: 7vw;
+  padding-left: $padding-left;
+  padding-right: $padding-right;
   @include ph {
     padding-left: 7vw;
     padding-right: 7vw;
@@ -22,14 +22,14 @@
 }
 
 .swiper-slide-1 h1 {
-  font-size: 5rem;
+  font-size: $title-font-size;
   color: white;
   position: absolute;
   top: 60%;
   left: 7%;
   z-index: 40;
   @include ph {
-    font-size: 3rem;
+    font-size: $title-font-size-mobile;
   }
 }
 .swiper-slide-1 img {

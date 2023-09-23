@@ -1,4 +1,4 @@
-export const pars = document.querySelectorAll(".par");
+const pars = document.querySelectorAll(".par");
 
 pars.forEach((par, i) => {
   par.addEventListener("click", () => {

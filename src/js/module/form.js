@@ -13,12 +13,16 @@ btnForm.addEventListener("click", () => {
       date: date.value,
       time: time.value,
     };
+    const applications =
+      JSON.parse(localStorage.getItem("applications_test_KM")) || [];
 
-    console.log(application);
+    applications.push(application);
+
+    localStorage.setItem("applications_test_KM", JSON.stringify(applications));
+
+    console.log(applications);
     inputs.forEach((input) => {
       input.value = "";
     });
   }
 });
-
-export { btnForm, inputs };

@@ -3,12 +3,13 @@ import IMask from "imask";
 const phone = document.getElementById("phone");
 const date = document.getElementById("date");
 const time = document.getElementById("time");
+const submitBtn = document.getElementById("submitBtn");
 
-export const phoneMask = IMask(phone, {
+const phoneMask = IMask(phone, {
   mask: "+{7}(000)000-00-00",
 });
 
-export const dateMask = IMask(date, {
+const dateMask = IMask(date, {
   mask: Date,
   lazy: true,
   autofix: true,
@@ -37,7 +38,7 @@ export const dateMask = IMask(date, {
   },
 });
 
-export const timeMask = IMask(time, {
+const timeMask = IMask(time, {
   mask: "HH:MM",
   lazy: true,
   blocks: {
@@ -56,4 +57,10 @@ export const timeMask = IMask(time, {
       to: 59,
     },
   },
+});
+
+submitBtn.addEventListener("click", () => {
+  dateMask.updateValue("");
+  timeMask.updateValue("");
+  phoneMask.updateValue("");
 });

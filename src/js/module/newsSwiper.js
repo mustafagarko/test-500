@@ -1,4 +1,4 @@
-export default new Swiper(".swiper-news", {
+new Swiper(".swiper-news", {
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,

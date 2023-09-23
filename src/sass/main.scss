@@ -6,6 +6,9 @@ $title-font-size: 80px;
 $title-font-size-mobile: 40px;
 $main-font-size: 16px;
 $smaller-font-size: 14px;
+$main-font-weight: 500;
+$smaller-font-weight: 400;
+$inputs-padding: 14px 15px 16px 20px;
 
 @mixin ph {
   @media (max-width: 700px) {
@@ -29,16 +32,11 @@ $smaller-font-size: 14px;
 
 body {
   font-family: "M PLUS 1", sans-serif;
-  font-size: 16px;
+  font-size: $main-font-size;
   line-height: 1.5;
   background: $background-color;
-  padding-top: 20vh;
   overflow-x: hidden;
-
-  @include ph {
-    color: #fff;
-    background-color: $background-color;
-  }
+  color: white;
 }
 
 @import "block/*.scss";

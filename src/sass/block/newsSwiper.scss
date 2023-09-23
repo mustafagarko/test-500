@@ -1,12 +1,12 @@
 .swiper-news {
   display: none;
   @include ph {
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
     display: flex;
     flex-direction: column;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 80px;
+    margin-bottom: 80px;
     padding-left: $padding-left;
   }
 }
@@ -27,13 +27,13 @@
 }
 
 .swiper-news .swiper-wrapper-news .swiper-slide-news {
-  height: 61vh;
+  height: fit-content;
 }
 
 .swiper-news .swiper-wrapper-news .swiper-slide-news img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 50vh;
   border-radius: 0;
 }
 

@@ -4,16 +4,21 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: #000;
+  background: $background-color;
   display: flex;
-  justify-content: space-between;
+  gap: 200px;
   align-items: center;
-  padding: 7.3vh 45vw 7.3vh 7vw;
+  padding: 7.3vh 7vw 7.3vh 7vw;
   height: 20vh;
   z-index: 40;
 
   @include thouspx {
+    gap: 50px;
     padding: 7.3vh $padding-left;
+  }
+
+  @include ph {
+    justify-content: space-between;
   }
 }
 
@@ -42,8 +47,9 @@ header nav ul li a {
   z-index: 40;
   padding: 15px;
   color: #fff;
-  background-color: #000;
+  background-color: $background-color;
   font-size: $main-font-size;
+  font-weight: $main-font-weight;
   display: block;
 }
 
@@ -63,7 +69,7 @@ nav ul li ul {
   z-index: 30;
   padding-top: 5.2vh;
   padding-bottom: 5.2vh;
-  background-color: #000;
+  background-color: $background-color;
 }
 
 nav ul li div {
@@ -73,7 +79,7 @@ nav ul li div {
   left: 0;
   display: none;
   transform: translateX(-50%);
-  background-color: #000;
+  background-color: $background-color;
   z-index: 10;
 }
 
@@ -97,6 +103,11 @@ nav ul li ul li {
 nav ul li ul li a {
   padding-left: 10px;
   padding-top: 3px;
+}
+
+nav ul li ul li p {
+  font-size: $smaller-font-size;
+  font-weight: $main-font-weight;
 }
 
 .par-active {

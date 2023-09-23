@@ -31,7 +31,7 @@
 
 .footer .footer-content .footer-text p {
   font-size: $smaller-font-size;
-  font-weight: 400;
+  font-weight: $main-font-weight;
   text-decoration: none;
 }
 
@@ -43,6 +43,7 @@
 
 .footer-icons {
   display: flex;
+  height: fit-content;
   flex-direction: row;
   gap: 30px;
 
@@ -54,7 +55,7 @@
 }
 .footer-text h3 {
   font-size: $main-font-size;
-  font-weight: 500;
+  font-weight: $main-font-weight;
 }
 
 .footer-content a {
@@ -63,8 +64,9 @@
 }
 .footer-content a p {
   font-size: $smaller-font-size;
+  font-weight: $main-font-weight;
 }
 
-.footer-icon {
+.footer-icons img {
   cursor: pointer;
 }

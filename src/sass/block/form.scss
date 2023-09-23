@@ -14,7 +14,7 @@
 
   h1 {
     font-size: $title-font-size;
-    font-weight: 500;
+    font-weight: $main-font-weight;
 
     @include ph {
       font-size: $title-font-size-mobile;
@@ -24,7 +24,7 @@
   p {
     width: 27vw;
     font-size: $main-font-size;
-    font-weight: 400;
+    font-weight: $smaller-font-weight;
 
     @include ph {
       width: 100%;
@@ -33,11 +33,11 @@
 
   .form-button {
     width: 141px;
-    padding: 14px 20px 16px 20px;
+    padding: 14px 20px;
     outline: none;
     border: 1px solid;
     border-color: #cececf;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: transparent;
   }
   .form-button span {
@@ -57,12 +57,12 @@
   .form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 
     .form-div {
       display: flex;
       flex-direction: row;
-      gap: 20px;
+      gap: 10px;
 
       @include ph {
         flex-direction: column;
@@ -74,9 +74,10 @@
         outline: none;
         border: 1px solid;
         border-color: #cececf;
-        border-radius: 15px;
-        // border-radius: 15px;
-        padding: 10px;
+        border-radius: 10px;
+        padding: $inputs-padding;
+        font-size: $smaller-font-size;
+        font-weight: $smaller-font-weight;
         @include ph {
           width: 100%;
         }

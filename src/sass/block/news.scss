@@ -13,6 +13,7 @@
 .news-container h1 {
   padding-bottom: 14px;
   font-size: $title-font-size;
+  font-weight: $main-font-weight;
 }
 
 .news-box {
@@ -32,10 +33,13 @@
 
 .news-card h3 {
   font-size: $main-font-size;
+  font-weight: $main-font-weight;
+
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
 .news-card p {
   font-size: $smaller-font-size;
+  font-weight: $main-font-weight;
 }

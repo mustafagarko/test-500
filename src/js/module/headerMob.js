@@ -25,9 +25,15 @@ const [navBlock] = document.getElementsByClassName("mob-container");
 const [phMenu] = document.getElementsByClassName("ph-menu");
 phMenu.addEventListener("click", () => {
   navBlock.classList.toggle("mob-container-active");
-  if (navBlock.classList.contains("mob-container-active")) {
-    phMenu.style.backgroundImage = 'url("../../img/closeMenuPhone.svg")';
-  } else {
-    phMenu.style.backgroundImage = 'url("../../img/menuPhone.svg")';
-  }
+  // if (navBlock.classList.contains("mob-container-active")) {
+  //   phMenu.style.backgroundImage = 'url("../../img/closeMenuPhone.svg")';
+  // } else {
+  //   phMenu.style.backgroundImage = 'url("../../img/menuPhone.svg")';
+  // }
+  const bar1 = document.getElementById("bar1");
+  const bar2 = document.getElementById("bar2");
+  const bar3 = document.getElementById("bar3");
+  bar1.classList.toggle("active-bar1");
+  bar2.classList.toggle("active-bar2");
+  bar3.classList.toggle("active-bar3");
 });

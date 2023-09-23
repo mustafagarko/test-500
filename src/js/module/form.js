@@ -7,7 +7,11 @@ const time = document.getElementById("time");
 btnForm.addEventListener("click", () => {
   if (phone.value && date.value && time.value && time.value) {
     const application = {
-      id: new Date().toISOString(),
+      id: new Date()
+        .toISOString()
+        .replaceAll(`:`, ``)
+        .replaceAll(`-`, ``)
+        .replaceAll(`.`, ``),
       createdAt: new Date().toISOString(),
       phone: phone.value,
       date: date.value,

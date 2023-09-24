@@ -8,15 +8,26 @@ const bar2 = document.getElementById("bar2");
 const bar3 = document.getElementById("bar3");
 const filterMob = document.getElementById("filter-mob");
 
+const handleMenu = function () {
+  mobMenu.classList.toggle("mob-container-active");
+  filterMob.classList.toggle("filter-mob-active");
+  bar1.classList.toggle("active-bar1");
+  bar2.classList.toggle("active-bar2");
+  bar3.classList.toggle("active-bar3");
+};
+
 menuContainer.addEventListener("click", (e) => {
   if (e.target.tagName === "P") {
-    mobMenu.classList.remove("mob-container-active");
-    menuBtn.classList.remove();
-    filterMob.classList.remove("filter-mob-active");
-    bar1.classList.toggle("active-bar1");
-    bar2.classList.toggle("active-bar2");
-    bar3.classList.toggle("active-bar3");
+    handleMenu();
   }
+});
+
+menuBtn.addEventListener("click", () => {
+  handleMenu();
+});
+
+filterMob.addEventListener("click", () => {
+  handleMenu();
 });
 
 titles.forEach((item) => {
@@ -37,15 +48,4 @@ titles.forEach((item) => {
       activeContent.style.maxHeight = activeContent.scrollHeight + "px";
     }
   });
-});
-
-const [navBlock] = document.getElementsByClassName("mob-container");
-const [phMenu] = document.getElementsByClassName("ph-menu");
-phMenu.addEventListener("click", () => {
-  navBlock.classList.toggle("mob-container-active");
-  filterMob.classList.toggle("filter-mob-active");
-
-  bar1.classList.toggle("active-bar1");
-  bar2.classList.toggle("active-bar2");
-  bar3.classList.toggle("active-bar3");
 });

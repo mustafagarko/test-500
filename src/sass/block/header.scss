@@ -10,7 +10,7 @@ header {
   align-items: center;
   padding: 7.3vh $padding-left;
   height: 20vh;
-  z-index: 40;
+  z-index: 60;
 
   @include thouspx {
     gap: 50px;
@@ -25,6 +25,7 @@ header {
 .logo {
   width: 42px;
   height: 50px;
+  z-index: 60;
 }
 
 .logo img {
@@ -36,6 +37,7 @@ header nav ul {
   position: relative;
   @include ph {
     display: none;
+    z-index: 50;
   }
 }
 

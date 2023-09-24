@@ -41,4 +41,8 @@ body {
   color: white;
 }
 
+.body-overflow-y {
+  overflow-y: hidden;
+}
+
 @import "block/*.scss";

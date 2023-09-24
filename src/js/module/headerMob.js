@@ -14,6 +14,7 @@ const handleMenu = function () {
   bar1.classList.toggle("active-bar1");
   bar2.classList.toggle("active-bar2");
   bar3.classList.toggle("active-bar3");
+  document.getElementsByTagName("body")[0].classList.toggle("body-overflow-y");
 };
 
 menuContainer.addEventListener("click", (e) => {

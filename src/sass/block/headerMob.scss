@@ -39,7 +39,7 @@
     align-items: flex-end;
     gap: 8px;
     width: 36px;
-    height: 24px;
+    height: 30px;
   }
 }
 .bar {
@@ -50,11 +50,11 @@
 }
 
 .active-bar1 {
-  transform: rotateZ(45deg) translateX(5px) translateY(4px);
+  transform: rotateZ(45deg) translateX(10px) translateY(9px);
   transition: 0.4s;
 }
 .active-bar2 {
-  transform: rotateZ(-45deg) translateY(-3px) translateX(4px);
+  transform: rotateZ(-45deg) translateY(2px) translateX(-1px);
   transition: 0.4s;
 }
 .active-bar3 {

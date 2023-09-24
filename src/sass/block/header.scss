@@ -54,7 +54,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #74ff73;
+  color: $header-hover-color;
 }
 
 header nav ul li a:hover > div {
@@ -113,7 +113,7 @@ nav ul li ul li p {
 .par-active {
   color: white;
   text-decoration: underline;
-  text-underline-offset: 8px;
+  text-underline-offset: 16px;
 }
 
 .filter {

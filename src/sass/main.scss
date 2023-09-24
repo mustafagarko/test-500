@@ -9,6 +9,8 @@ $smaller-font-size: 14px;
 $main-font-weight: 500;
 $smaller-font-weight: 400;
 $inputs-padding: 14px 15px 16px 20px;
+$section-padding-main: 50px;
+$header-hover-color: #74ff73;
 
 @mixin ph {
   @media (max-width: 700px) {

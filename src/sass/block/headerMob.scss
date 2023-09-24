@@ -74,23 +74,22 @@
 .ph-acc {
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
 
 .ph-acc-title {
   cursor: pointer;
-
   display: flex;
 }
 
 .ph-acc-content {
   display: flex;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .ph-acc-content {
   visibility: hidden;
-  padding: 6px;
   max-height: 0;
   opacity: 0;
   transition: max-height 0.5s ease-out, padding 0.5s ease-out,
@@ -107,20 +106,25 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  gap: 5px;
+  gap: 30px;
 }
 
 .ph-acc-title h3 {
   font-size: $main-font-size;
   font-weight: $main-font-weight;
-  padding-left: 27%;
+  padding-left: 20%;
+}
+.ph-acc-title h3:hover {
+  color: $header-hover-color;
 }
 
 .ph-content-sub p {
-  padding-left: 0vw;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 33%;
+
   font-size: $smaller-font-size;
   font-weight: $main-font-weight;
+}
+
+.ph-content-sub p:hover {
+  color: $header-hover-color;
 }

@@ -2,8 +2,8 @@
   color: white;
   padding-left: $padding-left;
   padding-right: $padding-right;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: $section-padding-main;
+  padding-bottom: $section-padding-main;
 
   @include ph {
     display: none;

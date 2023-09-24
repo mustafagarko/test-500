@@ -1,7 +1,23 @@
 const titles = document.querySelectorAll(".ph-acc-title");
 const contents = document.querySelectorAll(".ph-acc-content");
+const menuContainer = document.querySelector(".mob-container");
+const mobMenu = document.getElementById("mob-menu");
+const menuBtn = document.getElementById("menu-btn");
+const bar1 = document.getElementById("bar1");
+const bar2 = document.getElementById("bar2");
+const bar3 = document.getElementById("bar3");
 
-titles.forEach((item, i) => {
+menuContainer.addEventListener("click", (e) => {
+  if (e.target.tagName === "P") {
+    mobMenu.classList.remove("mob-container-active");
+    menuBtn.classList.remove();
+    bar1.classList.toggle("active-bar1");
+    bar2.classList.toggle("active-bar2");
+    bar3.classList.toggle("active-bar3");
+  }
+});
+
+titles.forEach((item) => {
   item.addEventListener("click", () => {
     const activeContent = document.querySelector("#" + item.dataset.tab);
     if (activeContent.classList.contains("active")) {
@@ -25,14 +41,6 @@ const [navBlock] = document.getElementsByClassName("mob-container");
 const [phMenu] = document.getElementsByClassName("ph-menu");
 phMenu.addEventListener("click", () => {
   navBlock.classList.toggle("mob-container-active");
-  // if (navBlock.classList.contains("mob-container-active")) {
-  //   phMenu.style.backgroundImage = 'url("../../img/closeMenuPhone.svg")';
-  // } else {
-  //   phMenu.style.backgroundImage = 'url("../../img/menuPhone.svg")';
-  // }
-  const bar1 = document.getElementById("bar1");
-  const bar2 = document.getElementById("bar2");
-  const bar3 = document.getElementById("bar3");
   bar1.classList.toggle("active-bar1");
   bar2.classList.toggle("active-bar2");
   bar3.classList.toggle("active-bar3");

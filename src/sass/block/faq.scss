@@ -1,6 +1,7 @@
 .faq-section {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: $section-padding-main;
+  padding-bottom: $section-padding-main;
+  height: fit-content;
 }
 
 .faq-container {

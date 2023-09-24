@@ -55,7 +55,7 @@
 
   .form-button:hover {
     cursor: pointer;
-    background-color: #74ff73;
+    background-color: $header-hover-color;
   }
   .form {
     display: flex;

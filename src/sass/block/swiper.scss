@@ -37,6 +37,7 @@
   border-radius: 10px;
 }
 .swiper-button-prevCustom {
+  cursor: pointer;
   position: absolute;
   bottom: 50px;
   left: 47%;
@@ -50,6 +51,7 @@
   transform: scaleX(-1) translateX(100%);
 }
 .swiper-button-prevCustom:hover {
+  cursor: pointer;
   position: absolute;
   bottom: 50px;
   left: 47%;
@@ -64,6 +66,7 @@
 }
 
 .swiper-button-nextCustom {
+  cursor: pointer;
   position: absolute;
   bottom: 50px;
   right: 47%;
@@ -78,6 +81,7 @@
   transform: translateX(100%);
 }
 .swiper-button-nextCustom:hover {
+  cursor: pointer;
   position: absolute;
   bottom: 50px;
   right: 47%;
